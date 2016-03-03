@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		08FFF74D1C88CECE0070CE6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FFF74C1C88CECE0070CE6B /* AppDelegate.swift */; };
 		08FFF74F1C88CECE0070CE6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FFF74E1C88CECE0070CE6B /* ViewController.swift */; };
-		08FFF7521C88CECE0070CE6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FFF7501C88CECE0070CE6B /* Main.storyboard */; };
+		08FFF7521C88CECE0070CE6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FFF7501C88CECE0070CE6B /* Main.storyboard */; settings = {ASSET_TAGS = (1, ); }; };
 		08FFF7541C88CECE0070CE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08FFF7531C88CECE0070CE6B /* Assets.xcassets */; };
 		08FFF7571C88CECE0070CE6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FFF7551C88CECE0070CE6B /* LaunchScreen.storyboard */; };
 		08FFF7621C88CECE0070CE6B /* SwiftSerinetteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FFF7611C88CECE0070CE6B /* SwiftSerinetteTests.swift */; };
@@ -189,6 +189,9 @@
 		08FFF7411C88CECE0070CE6B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = girlfriends;
@@ -427,6 +430,8 @@
 			baseConfigurationReference = 931EC22F2A70EAF6D14DC927 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sam Tarakajian (TNAZXTQQ8F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sam Tarakajian (TNAZXTQQ8F)";
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,6 +450,7 @@
 			baseConfigurationReference = 2CF5DA11120BF16369F3275B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sam Tarakajian (TNAZXTQQ8F)";
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -10,16 +10,17 @@ import UIKit
 import AudioKit
 
 class ViewController: UIViewController {
+    @IBOutlet var buttons: [UIButton]!
+
+    let octave = 4
+    let notes = [0, 2, 4, 5]
+    let pluckedString = AKPluckedString(frequency: 22050)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let oscillator = AKOscillator()
-        
-        AudioKit.output = oscillator
+        AudioKit.output = pluckedString
         AudioKit.start()
-        
-        oscillator.start()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +28,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func buttonPressed(sender: UIButton) {
+        let note = (12*octave) + notes[sender.tag-1]
+        pluckedString.trigger(frequency: note.midiNoteToFrequency())
+    }
 
 }
 
