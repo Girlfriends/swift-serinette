@@ -13,6 +13,9 @@
 		08FFF7541C88CECE0070CE6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08FFF7531C88CECE0070CE6B /* Assets.xcassets */; };
 		08FFF7571C88CECE0070CE6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FFF7551C88CECE0070CE6B /* LaunchScreen.storyboard */; };
 		08FFF7621C88CECE0070CE6B /* SwiftSerinetteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FFF7611C88CECE0070CE6B /* SwiftSerinetteTests.swift */; };
+		08FFF7771C88D9A80070CE6B /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FFF7761C88D9A80070CE6B /* AudioKit.framework */; };
+		08FFF7781C88D9A90070CE6B /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08FFF7761C88D9A80070CE6B /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5BD1642FDDAB8B53A6C4977 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47388EF158F5EE4358812484 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +28,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		08FFF7741C88D1210070CE6B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08FFF7781C88D9A90070CE6B /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		084445B71C88DBD80019A031 /* Xperiments.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Xperiments.playground; sourceTree = "<group>"; };
 		08FFF7491C88CECE0070CE6B /* SwiftSerinette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSerinette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FFF74C1C88CECE0070CE6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08FFF74E1C88CECE0070CE6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +54,10 @@
 		08FFF75D1C88CECE0070CE6B /* SwiftSerinetteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSerinetteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FFF7611C88CECE0070CE6B /* SwiftSerinetteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSerinetteTests.swift; sourceTree = "<group>"; };
 		08FFF7631C88CECE0070CE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08FFF7761C88D9A80070CE6B /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Frameworks/AudioKit.framework; sourceTree = "<group>"; };
+		2CF5DA11120BF16369F3275B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		47388EF158F5EE4358812484 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		931EC22F2A70EAF6D14DC927 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08FFF7771C88D9A80070CE6B /* AudioKit.framework in Frameworks */,
+				E5BD1642FDDAB8B53A6C4977 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +83,12 @@
 		08FFF7401C88CECE0070CE6B = {
 			isa = PBXGroup;
 			children = (
+				084445B71C88DBD80019A031 /* Xperiments.playground */,
+				08FFF7701C88D0090070CE6B /* Frameworks */,
 				08FFF74B1C88CECE0070CE6B /* SwiftSerinette */,
 				08FFF7601C88CECE0070CE6B /* SwiftSerinetteTests */,
 				08FFF74A1C88CECE0070CE6B /* Products */,
+				3D6B8EE2813F6985E3FE2004 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +123,24 @@
 			path = SwiftSerinetteTests;
 			sourceTree = "<group>";
 		};
+		08FFF7701C88D0090070CE6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08FFF7761C88D9A80070CE6B /* AudioKit.framework */,
+				47388EF158F5EE4358812484 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D6B8EE2813F6985E3FE2004 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				931EC22F2A70EAF6D14DC927 /* Pods.debug.xcconfig */,
+				2CF5DA11120BF16369F3275B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +148,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08FFF7661C88CECE0070CE6B /* Build configuration list for PBXNativeTarget "SwiftSerinette" */;
 			buildPhases = (
+				C7E780D55A2B14C0349BCE3C /* Check Pods Manifest.lock */,
 				08FFF7451C88CECE0070CE6B /* Sources */,
 				08FFF7461C88CECE0070CE6B /* Frameworks */,
 				08FFF7471C88CECE0070CE6B /* Resources */,
+				08FFF7741C88D1210070CE6B /* Embed Frameworks */,
+				DEEE3EFEE54811CAD2AC1CCD /* Embed Pods Frameworks */,
+				B945960ECB6F23ED60655599 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +241,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B945960ECB6F23ED60655599 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7E780D55A2B14C0349BCE3C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DEEE3EFEE54811CAD2AC1CCD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		08FFF7451C88CECE0070CE6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -262,6 +359,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks/\"";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -307,6 +405,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks/\"";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -325,8 +424,15 @@
 		};
 		08FFF7671C88CECE0070CE6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 931EC22F2A70EAF6D14DC927 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SwiftSerinette/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.girlfriends.SwiftSerinette;
@@ -336,8 +442,15 @@
 		};
 		08FFF7681C88CECE0070CE6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CF5DA11120BF16369F3275B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = SwiftSerinette/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.girlfriends.SwiftSerinette;
@@ -388,6 +501,7 @@
 				08FFF7681C88CECE0070CE6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08FFF7691C88CECE0070CE6B /* Build configuration list for PBXNativeTarget "SwiftSerinetteTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +510,7 @@
 				08FFF76B1C88CECE0070CE6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
