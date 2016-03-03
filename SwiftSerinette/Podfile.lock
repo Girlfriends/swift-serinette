@@ -1,13 +1,13 @@
 PODS:
   - DynamicColor (2.4.0)
-  - Spring (1.0.3)
+  - EasyAnimation (1.0.4)
 
 DEPENDENCIES:
   - DynamicColor (~> 2.4)
-  - Spring (~> 1.0)
+  - EasyAnimation
 
 SPEC CHECKSUMS:
   DynamicColor: 2f3fd61053684667bad9f03045dcf9a2a5a007ea
-  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  EasyAnimation: 4aabd439b4038f48d72939cc19d6220363b3206e
 
 COCOAPODS: 0.38.2

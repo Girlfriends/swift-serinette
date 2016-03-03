@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		084445B91C88EAD90019A031 /* SquishyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084445B81C88EAD90019A031 /* SquishyButton.swift */; };
 		08FFF74D1C88CECE0070CE6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FFF74C1C88CECE0070CE6B /* AppDelegate.swift */; };
 		08FFF74F1C88CECE0070CE6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FFF74E1C88CECE0070CE6B /* ViewController.swift */; };
 		08FFF7521C88CECE0070CE6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08FFF7501C88CECE0070CE6B /* Main.storyboard */; settings = {ASSET_TAGS = (1, ); }; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		084445B71C88DBD80019A031 /* Xperiments.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Xperiments.playground; sourceTree = "<group>"; };
+		084445B81C88EAD90019A031 /* SquishyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquishyButton.swift; sourceTree = "<group>"; };
 		08FFF7491C88CECE0070CE6B /* SwiftSerinette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSerinette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08FFF74C1C88CECE0070CE6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08FFF74E1C88CECE0070CE6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				08FFF74C1C88CECE0070CE6B /* AppDelegate.swift */,
 				08FFF74E1C88CECE0070CE6B /* ViewController.swift */,
+				084445B81C88EAD90019A031 /* SquishyButton.swift */,
 				08FFF7501C88CECE0070CE6B /* Main.storyboard */,
 				08FFF7531C88CECE0070CE6B /* Assets.xcassets */,
 				08FFF7551C88CECE0070CE6B /* LaunchScreen.storyboard */,
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084445B91C88EAD90019A031 /* SquishyButton.swift in Sources */,
 				08FFF74F1C88CECE0070CE6B /* ViewController.swift in Sources */,
 				08FFF74D1C88CECE0070CE6B /* AppDelegate.swift in Sources */,
 			);
